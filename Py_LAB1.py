@@ -24,8 +24,10 @@ rgb_im.save('bbb.png')
 #(wybierz kilka plików z repozytorium: Tekstowego) następujące
 #słowa : się, i, oraz, nigdy, dlaczego
 '''
+file_to_change = input('enter path to text file which you want to change')
+
 to_remove = [' się ', ' i ', ' oraz ', ' nigdy ', ' dlaczego ']
-with open('dzziady.txt' ,'r+') as file:
+with open(file_to_change, 'r+') as file:
     txt = file.read()
     file.truncate(0)
     for string in to_remove:
@@ -39,16 +41,18 @@ with open('dzziady.txt' ,'r+') as file:
 #(wybierz kilka plików z repozytorium: Tekstowego) następujące
 #słowa : i, oraz, nigdy, dlaczego na następujący zestaw słów : oraz,
 #i, prawie nigdy, czemu. Zalecaną strukturą jest słownik.
-
+'''
 to_remove = {'i' : 'oraz', 'oraz' : 'i', 'nigdy' : 'prawie nigdy', 'dlaczego' : 'czemu'}
 
-with open('dzziady.txt' ,'r+') as file:
+file_to_change = input('enter path to text file which you want to change')
+
+with open(file_to_change, 'r+') as file:
     txt = file.read()
     file.truncate(0)
     for k in to_remove:
         txt = txt.replace(k, to_remove[k])
     file.write(txt)
-
+'''
 
 
 
