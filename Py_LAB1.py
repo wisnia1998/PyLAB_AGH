@@ -92,7 +92,8 @@ def square_roots(a, b, c):
 #Sortowanie
 #Napisz skrypt sortujący liczby malejąco. Wygeneruj losowo 50
 #liczb - wykorzystąj standardową funkcje do losowania. Z wbudowanej
-#funkcji sortującej korzystaj tylko w celu weryfikacjiwyników
+#funkcji sortującej korzystaj tylko w celu weryfikacjiwyników
+
 import random, time
 
 def my_sort(ls):
@@ -137,8 +138,25 @@ print('my_time: ' + str(my_alg - start) + ', python alg time: ' + str(python_alg
 #Napisz skrypt obliczający wartość iloczynu dwóch wektorów:
 #a = [1, 2, 12, 4], b = [2, 4, 2, 8], tzw. iloczyn skalarny wektorów
 
+'''
+import array
 
+v1=[1,2,12,4]
+v2=[2,4,2,8]
 
+#v1 = input('write elements of first vector').split()
+#v2 = input('write elements of second vector').split()
+
+def Cross_Product(x,y):
+    cProd=0
+    for i in range(0, len(v1)):
+        cProd = int(v1[i])*int(v2[i]) + cProd
+    return cProd
+
+suma = Cross_Product(v1,v2)
+
+print(suma)
+'''
     
         
     
