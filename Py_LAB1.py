@@ -108,9 +108,8 @@ def my_sort(ls):
     tmp = None
     cond = True
     
-    while cond == True:             '''sorting until proper order (if condition
-                                    always False after looking whole list)'''
-        
+    while cond == True:                         #sorting until proper order (if condition
+                                                #always False after looking whole list)
         cond = False
         
         for index in range(1, len(ls)):            
@@ -157,9 +156,46 @@ suma = Cross_Product(v1,v2)
 
 print(suma)
 '''
+######################
+#OTHER WAY
+######################
+
+def dot_product(a, b):
+    """Counting dot product of two 1D lists of the same size
+
+    Input:
+    a, b - lists with int values, len(a) == len(b)!!!
+    Output:
+    None, if lists aren't the same size or counted dot product
+    """
     
+    if len(a) != len(b):
+        print("lists aren't the same size")
+        return None
+    else:
+        return sum([a[index] * b[index] for index in range(len(a))])
+'''
+a = [1, 2, 12, 4]
+b = [2, 4, 2, 8]
+dot_product(a, b)
+'''    
         
-    
+#Suma macierzy
+#Napisz skrypt sumujący dwie macierze o rozmiarach 128x128.
+#Wykorzystaj generator liczb losowych do wygenerowania
+#macierzy.
+
+def matrix_adder(matrix1, matrix2):
+    x = []
+    for row in range(len(matrix1)):
+        x.append([matrix1[row][index] + matrix2[row][index] for index in range(len(matrix1[row]))])
+    print(x)
+
+a = [[1,2],[3,4]]
+b = [[-1,-2],[-3,-4]]
+matrix_adder(a,b)
+
+
 
 
 
