@@ -1,4 +1,29 @@
 
+#ad.2
+#Napisz skrypt, który pyta o imię, nazwisko i rok urodzenia
+#(powinny być podane w jednej linii)
+
+
+dane = input("Podaj: Imie, Nazwisko, Date urodzenia").split(' ')
+
+print(dane)
+
+#ad.3
+#Napisz skrypt realizujący funkcję zamka szyfrowego. Prosi
+#o podanie kodu i następnie sprawdza czy jest on zgodny z
+#wcześniej wprowadzonym kodem
+
+
+password = 'asd123'
+
+write_password = input("Write your password")
+
+if password == write_password:
+    print('access granted')
+else:
+    print('access deny')
+
+
 #Konwersja rozszerzenia
 #Napisz skrypt konwersji rozszerzeń plików *.jpg na
 #*.png (uprzednio stwórz zestaw 4 plików z rozszerzeniem *.jpg)
