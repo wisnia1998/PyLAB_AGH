@@ -1,4 +1,14 @@
+#ad.2
+#Napisz skrypt, który pyta o imię, nazwisko i rok urodzenia
+#(powinny być podane w jednej linii)
 
+
+dane = input("Podaj: Imie, Nazwisko, Date urodzenia").split(' ')
+
+print(dane)
+
+
+#ad.3
 #Napisz skrypt realizujący funkcję zamka szyfrowego. Prosi
 #o podanie kodu i następnie sprawdza czy jest on zgodny z
 #wcześniej wprowadzonym kodem
@@ -227,6 +237,18 @@ matrix_adder(a,b)
 
 #Mnożenie macierzy
 #Napisz skrypt realizujący mnożenie dwóch macierzy o rozmiarach 8x8
+import numpy as np
+
+size = 8
+array1 = np.random.randint(1,10,(size, size))
+array2 = np.random.randint(1,10,(size, size))
+
+array_multiplcation_score=np.multiply(array1, array2)
+
+print(array_multiplcation_score)
+
+#Napisz skrypt wyliczający wyznacznik macierzy wygenerowanej losowo
+
 
 import numpy as np
 
