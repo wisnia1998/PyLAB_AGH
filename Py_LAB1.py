@@ -186,14 +186,48 @@ dot_product(a, b)
 #macierzy.
 
 def matrix_adder(matrix1, matrix2):
-    x = []
-    for row in range(len(matrix1)):
-        x.append([matrix1[row][index] + matrix2[row][index] for index in range(len(matrix1[row]))])
-    print(x)
+    """Funcktion which add two matrix
+
+    Input:
+    matrix1, matrix2 - to matrixes of the same size with numeric variables inside
+    Output:
+    Sum of two matrixes
+    """
+    
+    try:
+        
+        x = []
+        for row in range(len(matrix1)):
+            x.append([matrix1[row][index] + matrix2[row][index]
+                      for index in range(len(matrix1[row]))])
+        return x
+    
+    except:
+        print("Matrixes are differ in size or values aren't numeric")
+        
 
 a = [[1,2],[3,4]]
 b = [[-1,-2],[-3,-4]]
 matrix_adder(a,b)
+
+
+#Mnożenie macierzy
+#Napisz skrypt realizujący mnożenie dwóch macierzy o rozmiarach 8x8
+
+
+
+
+import numpy as np
+
+size = 8
+array = np.random.randint(1,10,(size, size))
+print(array)
+
+
+    
+
+
+
 
 
 
