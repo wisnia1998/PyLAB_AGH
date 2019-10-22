@@ -1,4 +1,18 @@
 
+#Napisz skrypt realizujący funkcję zamka szyfrowego. Prosi
+#o podanie kodu i następnie sprawdza czy jest on zgodny z
+#wcześniej wprowadzonym kodem
+
+
+password = 'asd123'
+
+write_password = input("Write your password")
+
+if password == write_password:
+    print('access granted')
+else:
+    print('access deny')
+
 #Konwersja rozszerzenia
 #Napisz skrypt konwersji rozszerzeń plików *.jpg na
 #*.png (uprzednio stwórz zestaw 4 plików z rozszerzeniem *.jpg)
