@@ -214,16 +214,15 @@ matrix_adder(a,b)
 #Mnożenie macierzy
 #Napisz skrypt realizujący mnożenie dwóch macierzy o rozmiarach 8x8
 
-
-
-
 import numpy as np
 
 size = 8
-array = np.random.randint(1,10,(size, size))
-print(array)
+array1 = np.random.randint(1,10,(size, size))
+array2 = np.random.randint(1,10,(size, size))
 
+array_multiplcation_score=np.multiply(array1, array2)
 
+print(array_multiplcation_score)
     
 
 
