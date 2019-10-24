@@ -22,6 +22,36 @@ if password == write_password:
     print('access granted')
 else:
     print('access deny')
+    
+#ad.4
+#Napisz skrypt zliczający ilość plików w katalogu /dev, skorzystaj
+#ze standardowej biblioteki - os
+
+import os
+
+path = 'D:\Pobrane\ALDEC ACTIV HDL'
+file_list = os.listdir(path)
+
+print('\n'.join(file_list))
+
+print('Amounth of files in directory: ', len(file_list))
+
+
+#ad.4
+#Napisz rekurencyjne przejście drzewa katalogów i wypisanie
+#plików, które znajdują się w eksplorowanej strukturze
+
+import os
+
+path = 'D:\Pobrane\ALDEC ACTIV HDL'
+stop_path= 'D:\ '
+
+while path != stop_path[:-1]:
+    print(path)
+    print('\n'.join(os.listdir(path)))
+    path = os.path.dirname(path)
+print(path)
+print('\n'.join(os.listdir(path)))
 
 #Konwersja rozszerzenia
 #Napisz skrypt konwersji rozszerzeń plików *.jpg na
